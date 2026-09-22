@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Twin Cities Animal Rescue</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Twin Cities Animal Rescue</h1>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Get Involved</h2>
+
+            <p>
+                Thank you for your interest in Twin Cities Animal Rescue.
+                Whether you want to volunteer, foster an animal, or learn more
+                about adoption, we would love to hear from you. Complete the
+                form below to tell us how you would like to get involved.
+            </p>
+        </section>
+
+        <section>
+            <h2>Volunteer or Foster Interest Form</h2>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Your Information</legend>
+
+                    <p>
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>How Would You Like to Help?</legend>
+
+                    <p>Interest Type:</p>
+
+                    <input type="radio" id="volunteer" name="interest" value="volunteer" required>
+                    <label for="volunteer">Volunteer</label><br>
+
+                    <input type="radio" id="foster" name="interest" value="foster">
+                    <label for="foster">Foster</label><br>
+
+                    <input type="radio" id="adoption" name="interest" value="adoption">
+                    <label for="adoption">Adoption Information</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Availability and Experience</legend>
+
+                    <p>
+                        <label for="availability">Availability:</label><br>
+                        <select id="availability" name="availability" required>
+                            <option value="">Select your availability</option>
+                            <option value="weekdays">Weekdays</option>
+                            <option value="evenings">Evenings</option>
+                            <option value="weekends">Weekends</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="experience">Experience With Pets:</label><br>
+                        <textarea id="experience"
+                                  name="experience"
+                                  rows="5"
+                                  cols="40"
+                                  required></textarea>
+                    </p>
+
+                    <p>
+                        <label for="message">Short Message:</label><br>
+                        <textarea id="message"
+                                  name="message"
+                                  rows="5"
+                                  cols="40"
+                                  maxlength="500"
+                                  required></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit Interest Form</button>
+                </p>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Service Area</h2>
+
+            <p>
+                Twin Cities Animal Rescue serves animals and families throughout
+                the Twin Cities area and surrounding communities. Our rescue
+                works with local volunteers, foster families, adopters, and
+                community partners to help animals find safe and loving homes.
+            </p>
+        </section>
+
+        <section>
+            <h2>Office Hours</h2>
+
+            <p>Monday-Friday: 9:00 a.m.-5:00 p.m.</p>
+            <p>Saturday: 10:00 a.m.-2:00 p.m.</p>
+            <p>Sunday: Closed</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Twin Cities Animal Rescue</p>
+    </footer>
+
+</body>
+</html>

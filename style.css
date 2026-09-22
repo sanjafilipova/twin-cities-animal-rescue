@@ -1,0 +1,228 @@
+/* Twin Cities Animal Rescue - Main Stylesheet */
+
+/* Base styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f2;
+    color: #2f3437;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #167d72;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px;
+    font-size: 2rem;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 6px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #0f5f57;
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: #167d72;
+    margin-top: 0;
+}
+
+h3 {
+    color: #0f5f57;
+}
+
+/* Images and media */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 25px 0;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* Links */
+main a {
+    color: #0f5f57;
+    font-weight: bold;
+}
+
+main a:hover,
+main a:focus {
+    color: #167d72;
+}
+
+/* Footer */
+footer {
+    background-color: #2f3437;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Content sections */
+main section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+main section + section {
+    margin-top: 25px;
+}
+
+/* Lists */
+main ul,
+main ol {
+    padding-left: 22px;
+}
+
+main li {
+    margin-bottom: 6px;
+}
+
+/* Form styles */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+fieldset {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #167d72;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button,
+input[type="submit"] {
+    background-color: #167d72;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    background-color: #0f5f57;
+}
+
+/* Radio button layout */
+input[type="radio"] + label {
+    display: inline;
+    font-weight: normal;
+    margin: 0;
+}
+
+input[type="radio"] {
+    margin: 8px 6px 8px 0;
+}
+
+/* Responsive layout for larger screens */
+@media (min-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav a {
+        min-width: 90px;
+    }
+
+    main {
+        width: 85%;
+    }
+
+    header h1 {
+        font-size: 2.25rem;
+    }
+}
