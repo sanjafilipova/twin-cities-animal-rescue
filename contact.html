@@ -39,7 +39,7 @@
         <section>
             <h2>Volunteer or Foster Interest Form</h2>
 
-            <form action="#" method="post">
+            <form action="#" method="post" novalidate>
 
                 <fieldset>
                     <legend>Your Information</legend>
@@ -47,11 +47,13 @@
                     <p>
                         <label for="name">Name:</label><br>
                         <input type="text" id="name" name="name" required>
+                        <span id="name-error" class="error-message"></span>
                     </p>
 
                     <p>
                         <label for="email">Email:</label><br>
                         <input type="email" id="email" name="email" required>
+                        <span id="email-error" class="error-message"></span>
                     </p>
                 </fieldset>
 
@@ -68,6 +70,9 @@
 
                     <input type="radio" id="adoption" name="interest" value="adoption">
                     <label for="adoption">Adoption Information</label>
+
+                    <span id="interest-error" class="error-message"></span>
+                    <p id="interest-message"></p>
                 </fieldset>
 
                 <fieldset>
@@ -82,6 +87,7 @@
                             <option value="weekends">Weekends</option>
                             <option value="flexible">Flexible</option>
                         </select>
+                        <span id="availability-error" class="error-message"></span>
                     </p>
 
                     <p>
@@ -91,6 +97,7 @@
                                   rows="5"
                                   cols="40"
                                   required></textarea>
+                        <span id="experience-error" class="error-message"></span>
                     </p>
 
                     <p>
@@ -101,6 +108,7 @@
                                   cols="40"
                                   maxlength="500"
                                   required></textarea>
+                        <span id="message-error" class="error-message"></span>
                     </p>
                 </fieldset>
 
@@ -136,5 +144,6 @@
         <p>&copy; 2026 Twin Cities Animal Rescue</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

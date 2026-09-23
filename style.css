@@ -202,6 +202,14 @@ input[type="radio"] {
     margin: 8px 6px 8px 0;
 }
 
+.error-message {
+    color: #9B1C1C;
+    display: block;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
 /* Responsive layout for larger screens */
 @media (min-width: 768px) {
     header {
