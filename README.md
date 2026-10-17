@@ -60,6 +60,12 @@ In the future, I would like to add individual profiles for adoptable animals so 
 
 ## Author
 
-Sanja Filipova
+**Sanja Filipova**
 
 Computer Science Student | Southern New Hampshire University
+
+## Project Information
+
+**Course:** Introduction to Web Development  
+**Platform:** Sophia Learning  
+**Project:** Twin Cities Animal Rescue Website
